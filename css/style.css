@@ -1,0 +1,1577 @@
+*{
+    font-family: Rubik;
+}
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*--------------------Modal---------------------*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content {
+    margin: 10% auto;
+    width: 40vh;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+  
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+  
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+  
+.modal-body {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../images/snapid.jpg');
+    background-size: cover;
+}
+  
+.modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+  
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+@keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+/*--------------------Nav Section---------------*/
+section#Nav{
+    position: fixed;
+    width: 100%;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-in;
+}
+section#Nav.black{
+    background: rgba(0, 0, 0, 0.9);   
+}
+#MainNav{
+    display: flex;
+    padding: 5vh 20vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    transition: all 0.5s ease-in;
+}
+#MainNav.onScroll{
+    padding: 2vh 20vh;
+}
+#NavList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+#MyName{
+    color: #ff6700;
+}
+#MyNameHero{
+    text-align: center;
+    font-size: 5em;
+    color: #ff6700;
+}
+#MyNameHero span{
+    font-family: 'Niconne';
+    text-shadow:
+    0 6px 8px rgba(0,0,0,.2),
+    0 9px 10px rgba(0,0,0,.15),
+    0 30px 10px rgba(0,0,0,.18),
+    0 15px 10px rgba(0,0,0,.21); 
+}
+#NavList li{
+    padding: 0px 2em;
+}
+#NavList li a:hover,
+#NavList li a.navColorChange{
+    color: #ff6700;
+}
+#NavLeft{
+    display: flex;
+    flex-direction: row;
+}
+.NavBarButton{
+    margin: 0 0 auto auto;
+    align-self: flex-end;
+    display: initial;
+    cursor: pointer;
+}
+.NavBarToggle{
+    display: none;
+}
+.NavBarToggle span{
+    padding: 1.5vh;
+}
+#SomethingAbouMe p{
+    text-align: center;
+}
+@media(max-width: 700px){
+    #MyNameHero{
+        font-size: 3em;
+    }
+}
+@media(max-width: 1000px){
+    .NavBarToggle{
+        display: initial;
+    }
+    #MainNav{
+        padding: 5vh 5vh 5vh 5vh; 
+        flex-direction: column;
+    }
+    #NavRight{
+        display: none;
+    }
+    #NavList{
+        flex-direction: column;
+    }
+    #NavList li{
+        padding: 1vh 2em;
+        text-align: center;
+    }
+    #MainNav.onScroll{
+        padding: 2vh 5vh;
+    }
+}
+
+
+/*--------------------Hero Section---------------*/
+#Hero{
+    width: 100%;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+#HeroContactMe{
+    float: left;
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: 45vh;
+}
+ul#HeroContactMeLogos{
+    list-style: none;
+}
+ul#HeroContactMeLogos li a img{
+    width: 4vh;
+    filter: grayscale(0);
+}
+ul#HeroContactMeLogos li{
+    padding: 0.2em 0;
+}
+ul#HeroContactMeLogos li a img:hover{
+    filter: grayscale(0);
+}
+.Container{
+    margin: 0 10%;
+    height: 100%;
+}
+#AboutMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 0 25vh;
+}
+#SomethingAbouMe p{
+    color: #ffffff;
+}
+@media(max-width: 1100px){
+    #AboutMe{
+        padding: 1vh;
+    }
+}
+
+/*--------------------Skills Section---------------*/
+#Skills{
+    background: rgb(255, 222, 0);
+}
+.SectionTitle{
+    font-weight: bolder;
+    font-size: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.SectionTitle span{
+    font-family: 'Crimson Text';
+    margin: 7vh auto 0 auto;
+    letter-spacing: 0.15em;
+    text-shadow:
+    0 6px 8px rgba(0,0,0,.2),
+    0 9px 10px rgba(0,0,0,.15),
+    0 30px 10px rgba(0,0,0,.18),
+    0 15px 10px rgba(0,0,0,.21);    
+}
+.SkillCardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 5vh 0;
+}
+.SkillCard{
+    cursor: pointer;
+    margin: 3vh auto;
+    width: 150px;
+    height: 125px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+    border-color: #4c4c4c;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+}
+.SkillCardHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: height 0.5s ease-in;
+    height: 100%;
+    background-color: rgb(1, 1, 1);
+    color: #ffffff;
+}
+.SkillCard:hover .SkillCardHeader{
+    flex-direction: row;
+    height: 40%;
+}
+.SkillCardHeader h3{
+    margin-right: auto;
+    margin-left: 20%;
+    margin-top: 35%;
+    margin-bottom: auto;
+    transition: all 0.5s ease-in;
+    font-size: 20px;
+    font-weight: normal;
+}
+.SkillCard:hover .SkillCardHeader h3{
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.SkillCardBody{
+    height: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.SkillInfo{
+    margin: 20px auto 3px auto;
+    font-size: 12px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bar-container {
+    margin: auto 10px;
+    background: #555;
+    position: relative;
+    width: auto;
+    height: 5px;
+    margin-top: 5px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+.bar-container .progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.SkillCard:hover .bar-container #progress-html {
+    -webkit-animation-name: progress-html;
+    animation-name: progress-html;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+.progressblue {
+    background-color: #1199ff;
+}
+@-webkit-keyframes progress-html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+@-moz-keyframes progress-html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+@keyframes progress-html {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+.SkillCard:hover .bar-container #progress-algo {
+    -webkit-animation-name: progress-algo;
+    animation-name: progress-algo;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-algo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+@-moz-keyframes progress-algo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+@keyframes progress-algo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-ds {
+    -webkit-animation-name: progress-ds;
+    animation-name: progress-ds;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-ds {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@-moz-keyframes progress-ds {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@keyframes progress-ds {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-ml {
+    -webkit-animation-name: progress-ml;
+    animation-name: progress-ml;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-ml {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 55%;
+    }
+}
+@-moz-keyframes progress-ml {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 55%;
+    }
+}
+@keyframes progress-ml {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 55%;
+    }
+}
+
+
+.SkillCard:hover .bar-container #progress-python {
+    -webkit-animation-name: progress-python;
+    animation-name: progress-python;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@-moz-keyframes progress-python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes progress-python {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+
+
+.SkillCard:hover .bar-container #progress-c {
+    -webkit-animation-name: progress-c;
+    animation-name: progress-c;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-c {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@-moz-keyframes progress-c {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@keyframes progress-c {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-js {
+    -webkit-animation-name: progress-js;
+    animation-name: progress-js;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-js {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@-moz-keyframes progress-js {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes progress-js {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+
+
+.SkillCard:hover .bar-container #progress-java {
+    -webkit-animation-name: progress-java;
+    animation-name: progress-java;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 65%;
+    }
+}
+@-moz-keyframes progress-java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 65%;
+    }
+}
+@keyframes progress-java {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 65%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-csharp {
+    -webkit-animation-name: progress-csharp;
+    animation-name: progress-csharp;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-csharp {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@-moz-keyframes progress-csharp {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@keyframes progress-csharp {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-cplusplus {
+    -webkit-animation-name: progress-cplusplus;
+    animation-name: progress-cplusplus;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-cplusplus {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+}
+@-moz-keyframes progress-cplusplus {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+}
+@keyframes progress-cplusplus {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 30%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-css {
+    -webkit-animation-name: progress-css;
+    animation-name: progress-css;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+@-moz-keyframes progress-css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+@keyframes progress-css {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-php {
+    -webkit-animation-name: progress-php;
+    animation-name: progress-php;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-php {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@-moz-keyframes progress-php {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes progress-php {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-node {
+    -webkit-animation-name: progress-node;
+    animation-name: progress-node;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-node {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+@-moz-keyframes progress-node {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+@keyframes progress-node {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-bs {
+    -webkit-animation-name: progress-bs;
+    animation-name: progress-bs;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-bs {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+@-moz-keyframes progress-bs {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+@keyframes progress-bs {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-jquery {
+    -webkit-animation-name: progress-jquery;
+    animation-name: progress-jquery;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-jquery {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+}
+@-moz-keyframes progress-jquery {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+}
+@keyframes progress-jquery {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 90%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-xml {
+    -webkit-animation-name: progress-xml;
+    animation-name: progress-xml;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-xml {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+}
+@-moz-keyframes progress-xml {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+}
+@keyframes progress-xml {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-json {
+    -webkit-animation-name: progress-json;
+    animation-name: progress-json;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-json {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+@-moz-keyframes progress-json {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+@keyframes progress-json {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-ajax {
+    -webkit-animation-name: progress-ajax;
+    animation-name: progress-ajax;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-ajax {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@-moz-keyframes progress-ajax {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@keyframes progress-ajax {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-sql {
+    -webkit-animation-name: progress-sql;
+    animation-name: progress-sql;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+@-moz-keyframes progress-sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+@keyframes progress-sql {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-mdb {
+    -webkit-animation-name: progress-mdb;
+    animation-name: progress-mdb;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-mdb {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@-moz-keyframes progress-mdb {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@keyframes progress-mdb {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-git {
+    -webkit-animation-name: progress-git;
+    animation-name: progress-git;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-git {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@-moz-keyframes progress-git {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+@keyframes progress-git {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 75%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-seo {
+    -webkit-animation-name: progress-seo;
+    animation-name: progress-seo;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-seo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@-moz-keyframes progress-seo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes progress-seo {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-maya {
+    -webkit-animation-name: progress-maya;
+    animation-name: progress-maya;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-maya {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 25%;
+    }
+}
+@-moz-keyframes progress-maya {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 25%;
+    }
+}
+@keyframes progress-maya {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 25%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-blender {
+    -webkit-animation-name: progress-blender;
+    animation-name: progress-blender;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-blender {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+}
+@-moz-keyframes progress-blender {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+}
+@keyframes progress-blender {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 45%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-unity {
+    -webkit-animation-name: progress-unity;
+    animation-name: progress-unity;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-unity {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@-moz-keyframes progress-unity {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+@keyframes progress-unity {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 80%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-photoshop {
+    -webkit-animation-name: progress-photoshop;
+    animation-name: progress-photoshop;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-photoshop {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+@-moz-keyframes progress-photoshop {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+@keyframes progress-photoshop {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 85%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-kivy {
+    -webkit-animation-name: progress-kivy;
+    animation-name: progress-kivy;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-kivy {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+@-moz-keyframes progress-kivy {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+@keyframes progress-kivy {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+}
+
+.SkillCard:hover .bar-container #progress-tkinter {
+    -webkit-animation-name: progress-tkinter;
+    animation-name: progress-tkinter;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+@-webkit-keyframes progress-tkinter {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+}
+@-moz-keyframes progress-tkinter {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+}
+@keyframes progress-tkinter {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 60%;
+    }
+}
+
+/*--------------------Project Section---------------*/
+.ProjectContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 5vh;
+}
+.ProjectCard{
+    cursor: pointer;
+    margin: 3vh auto;
+    width: 250px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bfc0c1;
+    box-shadow: 0 14px 28px 5px rgba(0, 0, 0, 0.25), 0 10px 10px 5px rgba(0, 0, 0, 0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: linear-gradient(to right bottom, rgba(160, 240, 146, 0.8), rgba(40, 180, 133, 0.8));
+}
+.ProjectCardHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 65%;
+}
+.ProjectTitle{
+    margin: 10px 0px 5px 15px;
+    font-size: 25px;
+}
+.ProjectTitle span,
+.ProjectDescription p{
+    font-family: Roboto;
+}
+.ProjectDescription{
+    padding: 0px 15px;
+}
+.ProjectCardBody{
+    height: 35%;
+}
+.Stack,
+.ProjectDisplay ul{
+    margin-left: 15px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ProjectTechStack,
+.ProjectDisplay{
+    margin: 10px 0px;
+}
+.StackElement{
+    padding: 5px;
+    border-radius: 3px;
+    margin: 0px 3px;
+}
+.ProjectDisplay ul li{
+    margin: 0px 7px;
+}
+.Python{
+    background-color: #ffca28;
+}
+.HTML{
+    background-color: #e44d26;
+}
+.CSS{
+    background-color: #42a5f5;
+}
+.Kivy{
+    background-color: #42a5f5;
+}
+.NodeJS{
+    background-color: #7ebc14;
+}
+.CSharp{
+    background-color: #690480;
+    color: #ffffff;
+}
+.MongoDb{
+    background-color: #47a54a;
+}
+.Unity3D{
+    background-color: #0c0c0c;
+    color: #ffffff;
+}
+.SQL{
+    background-color: #f8b03e;
+}
+.Express{
+    background-color: #f6de29;
+}
+.Sass{
+    background-color: #de3564;
+}
+.Pug{
+    background-color: #141414;
+    color: #ffffff;
+}
+a.GitHub{
+    color: #524c32;
+}
+a.Website{
+    color: #0563ac;
+}
+
+
+/*---------------------------Misc Section------------------------*/
+#Misc{
+    background-color: hsl(32, 100%, 51%);
+    padding-bottom: 5vh;
+}
+.ActivityContainer{
+    background-color: rgba(3, 3, 3, 0.205);
+    width: 100%;
+    margin-top: 2vh;
+}
+.ActivityTitle{
+    margin-left: 7vh;
+    padding-top: 5vh;
+}
+.ActivityTitle span{
+    font-family: 'Crimson Text';
+    font-size: 1.5em;
+    color: #ffffff;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+}
+.BookCardContainer{
+    margin: 0 5vh;
+    padding: 2vh 0vh 5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -ms-overflow-style: none;
+    overflow: hidden;
+}
+.BookCardContainer::-webkit-scrollbar { 
+    display: none; 
+}
+@-moz-document url-prefix() {
+    .BookCardContainer{
+        overflow: -moz-scrollbars-none;
+    }
+}
+.BookCard{
+    margin: 2vh 2vh;
+    background: rgb(246, 246, 246);
+    width: 50vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 1%;
+    box-shadow: 0 14px 28px 5px rgba(0, 0, 0, 0.25), 0 10px 10px 5px rgba(0, 0, 0, 0.22);
+    transition: transform 0.5s ease-in;
+}
+.BookImage.Week1{
+    background-image: url("../images/Book1.jpg");
+}
+.BookImage.Week2{
+    background-image: url("../images/Book2.jpeg");
+}
+.BookImage.Week3{
+    background-image: url("../images/Book3.jpeg");
+}
+.BookImage{
+    width: 25vh;
+    height: 40vh;
+    flex-basis: 50%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.BookFooter{
+    flex-basis: 50%;
+    width: 25vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.BookFooter > div{
+    padding-left: 2vh;
+    padding-top: 2vh; 
+}
+.BookName{
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 5%;
+    color: #5a5a5a;
+}
+.BookAuthor{
+    font-size: 1.03rem;
+    color: #ececec;
+    color:#8a8a8a;
+    font-style: normal;
+}
+.WeekInfo{
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+}
+@media(max-width: 700px){
+    .BookCardContainer{
+        overflow: scroll;
+    }
+}
+
+@media(max-width: 700px){
+    .BookCardContainer{
+        margin: 0 1vh;
+    }
+}
+
+/*---------------------------ContactMe Section------------------------*/
+#ContactMe{
+    background-color: hsl(0, 0%, 0%);
+    color: #ffffff;
+}
+#FooterContactMeLogos li a img{
+    width: 5vh;
+    filter: contrast(0);
+}
+#FooterContactMeLogos li a img:hover{
+    filter: contrast(100%);
+}
+.ContactMeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+#ContactMe .Container .SectionTitle span{
+    text-shadow:
+        0 6px 12px rgba(255, 255, 255, 0.2),
+        0 9px 20px rgba(255, 255, 255, 0.15),
+        0 15px 20px rgba(255, 255, 255, 0.21);   
+}
+#ContactMeLogos{
+    width: 50%;
+}
+#FooterContactMeLogos{
+    margin: 20% auto auto auto;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+}
+#FooterContactMeLogos li{
+    margin: auto 1.5vh;
+}
+#ContactMeForm{
+    width: 50%;
+}
+#ContactMeForm form{
+    width: 80%;
+}
+#ContactMeForm form p{
+    margin: 3vh 0;
+}
+#ContactMeForm form p label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#ContactMeForm form p label span{
+    letter-spacing: 0.12em;
+}
+#ContactMeForm input[type = "text"],
+#ContactMeForm input[type = "email"],
+#ContactMeForm textarea{
+    padding: 1vh;
+    width: 60%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #1a1a1a;
+    outline: none;
+}
+
+#ContactMeForm textarea{
+    resize: none;
+    overflow: auto;
+
+}
+#ContactMeForm input[type = "text"].IncorrectValue,
+#ContactMeForm input[type = "email"].IncorrectValue,
+#ContactMeForm textarea.IncorrectValue{
+    border-bottom-color: #d30606;
+}
+#ContactMeForm input[type = "text"].Submited,
+#ContactMeForm input[type = "email"].Submited,
+#ContactMeForm textarea.Submited{
+    border-bottom-color: #04e63c;
+}
+#SubmitButton{
+    width: 100%;
+    padding: 1vh;
+    border-width: 3px;
+    border-color: #1ecd97;
+    border-radius: 20px;
+    background: none;
+    color: #1ecd97;
+    transition: all 0.5s ease-in-out;
+}
+#SubmitButton:hover{
+    background: #1ecd97;
+    color: #ffffff;
+}
+#SubmitButton:focus{
+    outline: none;
+}
+
+@media(max-width: 1000px){
+    #ContactMeForm form{
+        width: 100%;
+    }
+}
+@media(max-width: 700px){
+    #ContactMeForm input[type = "text"],
+    #ContactMeForm input[type = "email"],
+    #ContactMeForm textarea{
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px){
+    .ContactMeContainer{
+        flex-direction: column;
+    }
+    #ContactMeLogos,
+    #ContactMeForm,
+    #FooterContactMeLogos{
+        width: 100%;
+    }
+}

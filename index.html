@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bhushan Kolhe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/ico" href="images/TitleIcon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Snapchat ID:</h2>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+    <section id="Nav">
+        <div id="MainNav">
+            <div id="NavLeft">
+                <div id="MyLogo"></div>
+                <div id="MyName">
+                    <span>
+                        Bhushan Kolhe
+                    </span>
+                </div>
+                <div class="NavBarToggle NavBarButton">
+                    <span>
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+            <div id="NavRight">
+                <ul id="NavList">
+                    <li><a id ='NavAboutMe' class='navColorChange' href="#Hero">About Me</a></li>
+                    <li><a id ='NavSkills' href="#Skills">Skills</a></li>
+                    <li><a id='NavProjects' href="#Projects">Projects</a></li>
+                    <li><a id='NavMisc' href="#Misc">Misc</a></li>
+                    <li><a id='NavContactMe' href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </div>        
+        </div>
+    </section>
+    <section id="Hero">
+        <div id="HeroContactMe">
+            <ul id="HeroContactMeLogos">
+                <li><a href="https://www.facebook.com/kkbk58901"><img src="images/facebookNoWhite.png" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/chocoholic_prince/"><img src="images/InstagramNoWhite.png" alt="Instagram"></a></li>
+                <li><a href="https://twitter.com/BhushanKolhe09"><img src="images/twitterNoWhite.png" alt="Twitter"></a></li>
+                <li><a href="https://www.linkedin.com/in/bhushan-kolhe"><img src="images/LinkedInNoWhite.png" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/chocoholic-me"><img src="images/GitHubWhite.png" alt="GitHub"></a></li>
+                <li id="SnapchatBtn"><a href="#"><img src="images/SnapchatNoWhite.png" alt="Snapchat"></a></li>
+            </ul>
+        </div>
+        <div class="Container">
+            <div id="AboutMe">
+                <div>
+                    <div id="MyNameHero"> 
+                        <span>
+                            Bhushan Kolhe
+                        </span>                                   
+                    </div>
+                    <div id="SomethingAbouMe">
+                        <p>
+                            I am self learning Computer Engineer and a Entrepreneur. I am very curious person by nature and love to learn new things and explore new technology.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <div class="Container">
+            <div class="SectionTitle">
+                <span>ACQUIRED SKILLS</span>
+            </div>
+            <div class="SkillCardContainer">
+            </div>
+        </div>
+    </section>
+    <section id="Projects">
+        <div class="Container">
+            <div class="SectionTitle">
+                <span>PROJECTS</span>
+            </div>
+            <div class="ProjectContainer">
+                <div class="ProjectCard">
+                    <section class="ProjectCardHead">
+                        <div class="ProjectTitle">
+                            <span>
+                                Blogging Web App
+                            </span>
+                        </div>
+                        <div class="ProjectDescription">
+                            <p>
+                                This web app let users post blogs with images, follow other users, comment and share other's blogs etc
+                            </p>
+                        </div>
+                    </section>
+                    <section class="ProjectCardBody">
+                        <div class="ProjectTechStack">
+                            <ul class="Stack">
+                                <li class="StackElement NodeJS">Node.js</li>
+                                <li class="StackElement Express">Express</li>
+                                <li class="StackElement Sass">Sass</li>
+                                <li class="StackElement Pug">Pug</li>
+                                <li class="StackElement MongoDb">MongoDb</li>
+                            </ul>
+                        </div>
+                        <div class="ProjectDisplay">
+                            <ul>
+                                <li><a class="GitHub" href="https://github.com/chocoholic-me/BloggingWebsite">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="ProjectCard">
+                    <section class="ProjectCardHead">
+                        <div class="ProjectTitle">
+                            <span>
+                                Berkeley Sockets App
+                            </span>
+                        </div>
+                        <div class="ProjectDescription">
+                            <p>
+                                This is a GUI app that lets the user create multiple socket connection on multiple addresses and ports using IP aliasing and pass messages between the client and server.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="ProjectCardBody">
+                        <div class="ProjectTechStack">
+                            <ul class="Stack">
+                                <li class="StackElement Python">Python</li>
+                                <li class="StackElement Kivy">Kivy</li>
+                            </ul>
+                        </div>
+                        <div class="ProjectDisplay">
+                            <ul>
+                                <li><a class="GitHub" href="https://github.com/chocoholic-me/BerkSocketsApp">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="ProjectCard">
+                    <section class="ProjectCardHead">
+                        <div class="ProjectTitle">
+                            <span>
+                                Minesweeper.Ai
+                            </span>
+                        </div>
+                        <div class="ProjectDescription">
+                            <p>
+                                Ai that plays Minesweeper using Artificial Neural Network and evolves using Genetic Algorithm. 
+                            </p>
+                        </div>
+                    </section>
+                    <section class="ProjectCardBody">
+                        <div class="ProjectTechStack">
+                            <ul class="Stack">
+                                <li class="StackElement Python">Python</li>
+                            </ul>
+                        </div>
+                        <div class="ProjectDisplay">
+                            <ul>
+                                <li><a class="GitHub" href="https://github.com/chocoholic-me/MinesweeperNeuralEvolution">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="ProjectCard">
+                    <section class="ProjectCardHead">
+                        <div class="ProjectTitle">
+                            <span>
+                                Twin Glider
+                            </span>
+                        </div>
+                        <div class="ProjectDescription">
+                            <p>
+                                This is an android game that lets you control two ships using accelerometer to avoid obstacles.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="ProjectCardBody">
+                        <div class="ProjectTechStack">
+                            <ul class="Stack">
+                                <li class="StackElement Unity3D">Unity-3D</li>
+                                <li class="StackElement CSharp">C#</li>
+                            </ul>
+                        </div>
+                        <div class="ProjectDisplay">
+                            <ul>
+                                <li><a class="Website" href="https://drive.google.com/file/d/1M4ix2IgSWkffUmmobwvmfzq-xJ1dQ9ZB/view">Download Apk</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="ProjectCard">
+                    <section class="ProjectCardHead">
+                        <div class="ProjectTitle">
+                            <span>
+                                ToDo App
+                            </span>
+                        </div>
+                        <div class="ProjectDescription">
+                            <p>
+                                This app lets each user create their own list of Todo's.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="ProjectCardBody">
+                        <div class="ProjectTechStack">
+                            <ul class="Stack">
+                                <li class="StackElement Python">Python</li>
+                                <li class="StackElement Kivy">Kivy</li>
+                                <li class="StackElement SQL">SQL</li>
+                            </ul>
+                        </div>
+                        <div class="ProjectDisplay">
+                            <ul>
+                                <li><a class="GitHub" href="https://github.com/chocoholic-me/ToDoApp">GitHub</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Misc">
+        <div class="SectionTitle">
+            <span>MISCELLANEOUS</span>
+        </div>
+        <div class="ActivityContainer">
+            <div class="ActivityTitle">
+                <span>
+                    READ 1 BOOK FOR EVERY WEEK OF 2019!
+                </span>
+            </div>
+            <div class="BookCardContainer">
+                <div class="BookCard">
+                    <div class="BookHerder">
+                        <div class="BookImage Week1"></div>
+                    </div>
+                    <div class="BookFooter">
+                        <div>
+                            <div class="BookName">How To Win Friends And Influence People</div>
+                            <div class="BookAuthor">Dale Carnegie</div>
+                        </div>
+                        <div class="WeekInfo">WEEK 1</div>
+                    </div>
+                </div>
+                <div class="BookCard">
+                    <div class="BookHerder">
+                        <div class="BookImage Week2"></div>
+                    </div>
+                    <div class="BookFooter">
+                        <div>
+                            <div class="BookName">The Theory Of Everything</div>
+                            <div class="BookAuthor">Stephen W Hawking</div>
+                        </div>
+                        <div class="WeekInfo">WEEK 2</div>
+                    </div>
+                </div>
+                <div class="BookCard">
+                    <div class="BookHerder">
+                        <div class="BookImage Week3"></div>
+                    </div>
+                    <div class="BookFooter">
+                        <div>
+                            <div class="BookName">Brief Answers To The Big Questions</div>
+                            <div class="BookAuthor">Stephen W Hawking</div>
+                        </div>
+                        <div class="WeekInfo">WEEK 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ContactMe">
+        <div class="Container">
+            <div class="SectionTitle">
+                <span>CONTACT ME</span>
+            </div>
+            <div class="ContactMeContainer">
+                <div id="ContactMeLogos">
+                    <ul id="FooterContactMeLogos">
+                        <li><a href="https://www.facebook.com/kkbk58901"><img src="images/facebookNoWhite.png" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/chocoholic_prince/"><img src="images/InstagramNoWhite.png" alt="Instagram"></a></li>
+                        <li><a href="https://twitter.com/BhushanKolhe09"><img src="images/twitterNoWhite.png" alt="Twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/in/bhushan-kolhe"><img src="images/LinkedInNoWhite.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://github.com/chocoholic-me"><img src="images/GitHubWhite.png" alt="GitHub"></a></li>
+                        <li id="SnapchatBtn2"><a href="#"><img src="images/SnapchatNoWhite.png" alt="Snapchat"></a></li>
+                </div>
+                <div id="ContactMeForm">
+                    <form id="FeedbackForm" method="post" action="send_mail.php">
+                        <p>
+                            <label class="NameFormGroup">
+                                <span>Name:</span>
+                                <input type="text" name="first_name" required placeholder="Name">
+                            </label> 
+                        </p>
+                        <p>
+                            <label class="EmailFormGroup">
+                                <span>Email:</span>
+                                <input type="email" name="email_address" required placeholder="Email...">
+                            </label>
+                        </p>
+                        <p>
+                            <label class="MessageFormGroup">
+                                <span>Message:</span>
+                                <textarea name="comments" rows="5" maxlength="500" required placeholder="Message..."></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <button id="SubmitButton">Submit</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
